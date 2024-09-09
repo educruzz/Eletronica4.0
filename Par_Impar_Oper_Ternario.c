@@ -1,0 +1,33 @@
+/******************************************************************************
+
+Autor: Eduardo da Costa.
+Data: 02/09/2024
+Modulo: Logica de Programação
+Exercicio:Par_Impar/Operador ternario
+Curso: Eletronica 4.0
+Local: INDT
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+    
+    // if statement padrao
+    printf("Insira um numero  inteiro: ");
+    scanf("%d%*c", &n);
+    
+    // operador ternario
+    printf(n%2==0 ? "%d é par\n" : "%d é impar", n);
+    
+    if (n % 2==0)
+    {
+        printf("%d é par", n);
+    }
+    else {
+        printf("%d é impar", n);
+    }
+
+    return 0;
+}
